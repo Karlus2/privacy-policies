@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade — FormuLab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #070709;
+      --surface: #12131a;
+      --surface-elevated: #1a1c26;
+      --border: #262938;
+      --primary: #4e88ff;
+      --physics: #00d2ff;
+      --chemistry: #00f0aa;
+      --math: #b05cff;
+      --text: #f0f2fa;
+      --text-muted: #9aa1b8;
+      --code-bg: #0d0e14;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      line-height: 1.65;
+      padding: 32px 16px 80px;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 32px;
+      margin-bottom: 36px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(78, 136, 255, 0.12);
+      border: 1px solid rgba(78, 136, 255, 0.3);
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .date {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      margin-top: 36px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: var(--physics);
+      border-radius: 2px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    ul {
+      margin-bottom: 18px;
+      padding-left: 20px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: var(--chemistry);
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">⚡ FormuLab • Documento Legal</div>
+      <h1>Política de Privacidade</h1>
+      <div class="date">Última atualização: Outubro de 2026</div>
+    </header>
+
+    <main>
+      <p>
+        Esta Política de Privacidade descreve como o aplicativo <strong>FormuLab</strong> (identificado pelo pacote <code>com.formulab.formulab</code>), desenvolvido para auxiliar estudantes e profissionais no cálculo e aprendizagem de fórmulas de Física, Química e Matemática, coleta, utiliza e protege suas informações.
+      </p>
+
+      <h2>1. Coleta e Uso de Informações</h2>
+      <p>Nosso compromisso é com a privacidade e a transparência. O FormuLab foi projetado com arquitetura majoritariamente offline, operando com o mínimo estritamente necessário de dados:</p>
+
+      <div class="card">
+        <h3>A. Autenticação e Conta de Usuário (Google Sign-In)</h3>
+        <p>Quando você opta por fazer login com sua conta Google, utilizamos o serviço <strong>Firebase Authentication</strong> para identificar com segurança sua sessão. Os dados recebidos incluem:</p>
+        <ul>
+          <li>Identificador único de usuário (UID do Firebase);</li>
+          <li>Endereço de e-mail e nome de exibição;</li>
+          <li>Foto de perfil pública (utilizada exclusivamente na interface da carteira/perfil).</li>
+        </ul>
+        <p><strong>Finalidade:</strong> Sincronizar com segurança seus créditos, garantir que indicações (referrals) sejam creditadas adequadamente e evitar fraudes de resgate mútuo entre contas.</p>
+      </div>
+
+      <div class="card">
+        <h3>B. Dados Locais e Cálculos</h3>
+        <p>
+          Suas resoluções, anotações de caderno, histórico de fórmulas e preferências de unidades são processados e armazenados <strong>exclusivamente de forma local no seu dispositivo</strong> (via SQLite e SharedPreferences). Não enviamos o conteúdo dos seus cálculos matemáticos para servidores externos.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>C. Anúncios Recompensados (Google AdMob)</h3>
+        <p>
+          Para permitir o uso gratuito e bonificação de créditos aos usuários, o aplicativo integra a rede de anúncios <strong>Google Mobile Ads (AdMob)</strong>. O AdMob pode coletar identificadores anônimos de dispositivo (como o Advertising ID da Google Play) para veiculação de anúncios de acordo com as políticas do Google.
+        </p>
+      </div>
+
+      <h2>2. Serviços de Terceiros Integrados</h2>
+      <p>O FormuLab integra bibliotecas fornecidas por terceiros confiáveis para fornecer funcionalidades essenciais:</p>
+      <ul>
+        <li>
+          <strong>Google Firebase:</strong> Autenticação de contas e validação de códigos de indicação na nuvem. Consulte a <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Google</a>.
+        </li>
+        <li>
+          <strong>Google AdMob:</strong> Exibição de anúncios de recompensa. Consulte as <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Políticas de Anúncios do Google</a>.
+        </li>
+        <li>
+          <strong>Google Play Services & In-App Review:</strong> Gerenciamento nativo de avaliações e serviços da loja no ecossistema Android.
+        </li>
+      </ul>
+
+      <h2>3. Compartilhamento de Dados</h2>
+      <p>
+        Nós <strong>não vendemos, alugamos ou comercializamos</strong> suas informações pessoais com terceiros. As únicas trocas de dados ocorrem estritamente com os provedores técnicos citados acima para viabilizar as funcionalidades do aplicativo.
+      </p>
+
+      <h2>4. Retenção e Exclusão de Dados</h2>
+      <p>
+        Seus dados locais podem ser apagados a qualquer momento simplesmente desinstalando o aplicativo ou limpando os dados do app nas configurações do Android.
+      </p>
+      <p>
+        Para solicitar a exclusão definitiva dos dados de conta associados ao seu e-mail e UID do Firebase, basta enviar uma mensagem para o e-mail de suporte informado abaixo com o assunto <em>"Exclusão de Conta FormuLab"</em>. Todos os registros vinculados à sua identidade serão removidos em até 15 dias úteis.
+      </p>
+
+      <h2>5. Privacidade de Menores</h2>
+      <p>
+        O FormuLab é uma ferramenta educacional voltada para estudantes do ensino fundamental, médio e superior. Não coletamos intencionalmente dados pessoais sensíveis de menores de 13 anos. Caso identifiquemos qualquer cadastro não autorizado dessa natureza, os dados serão prontamente removidos.
+      </p>
+
+      <h2>6. Segurança</h2>
+      <p>
+        Adotamos medidas técnicas para proteger as informações que processamos, incluindo criptografia em trânsito (HTTPS/TLS) para comunicações com o Firebase e regras de segurança para prevenção de fraudes.
+      </p>
+
+      <h2>7. Alterações a Esta Política</h2>
+      <p>
+        Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças no aplicativo ou nas exigências regulatórias. A versão atualizada estará sempre acessível nesta mesma página com a data da última revisão informada no topo.
+      </p>
+
+      <h2>8. Canal de Contato e Suporte</h2>
+      <p>
+        Em caso de dúvidas, sugestões ou solicitações relativas à privacidade dos seus dados, entre em contato com a equipe de desenvolvimento:
+      </p>
+      <p>
+        📧 <strong>E-mail de Contato:</strong> <a href="mailto:karlusdev2@gmail.com">karlusdev2@gmail.com</a><br>
+        📦 <strong>Repositório do Projeto:</strong> <a href="https://github.com/Karlus2/Formulab" target="_blank" rel="noopener">github.com/Karlus2/Formulab</a>
+      </p>
+    </main>
+
+    <footer>
+      <p>© 2026 FormuLab. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
